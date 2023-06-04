@@ -20,11 +20,84 @@
     </nav>
 
     <main class="container">
-
+        <div class="top-20">
         <div id="display-wrapper" class="top-20">
         </div>
-        <div class="row top-20">
-            <label class="form">Flight</label> <input type="text" id="flight-number"> <btn class="btn btn-primary" id="submit-oracle">Submit to Oracles</btn>
+        <h2>For Airlines</h2>
+
+        <div>
+            <h4>Register new airline:</h4>
+            <label class="form">Name</label>
+            <select type="text" id="register-airline-name" >
+                <option value="AIR2">AIR2</option>
+                <option value="AIR3">AIR3</option>
+                <option value="AIR4">AIR4</option>
+            </select>
+
+            <label class="form">Address</label> <input type="text"  value="0xCe5144391B4aB80668965F2Cc4f2CC102380Ef0A" readonly id="register-airline-address">
+            <button class="btn btn-primary" id="register-airline-btn">Register</button>
+
+            <h4>Add funds after registration:</h4>
+
+            <label class="form">Name</label>
+            <select type="text" id="fund-airline-name">
+                <option value="AIR1">AIR1</option>
+                <option value="AIR2">AIR2</option>
+                <option value="AIR3">AIR3</option>
+                <option value="AIR4">AIR4</option>
+            </select>
+            <label class="form">Amount</label> <input type="text" id="fund-airline-amount" readonly value=10>
+            <button class="btn btn-primary" id="fund-airline">Fund</button>
+
+        </div>
+
+            <div style="margin: 20px 0 0 0"></div>
+            After first 4 airlines are registered and funded:
+        <h2>For customers</h2>
+        <div>
+            <h4>Purchase insurance policy:</h4>
+            <label class="form">Flight</label>
+            <select type="text" id="buy-flight-name" >
+            <option value="LH123">LH123</option>
+            <option value="UA456">UA456</option>
+            <option value="MV789">MV789</option>
+            <option value="JK012">JK012</option>
+        </select>
+            <label class="form">Name</label>
+            <input readonly type="text"  size=3 id="buy-airline-name" value="AIR1"/>
+            <label class="form">Address</label>
+            <input readonly type="text" id="buy-airline-address" value ="0x018C2daBef4904ECbd7118350A0c54DbeaE3549A" />
+            <br>
+            <label class="form">Amount</label> <input type="text" id="buy-insurance-amount">
+            <button class="btn btn-primary" id="buy-insurance-btn">Purchase</button>
+
+            <h4>Withdraw My Funds:</h4>
+            <button class="btn btn-primary" id="get-balance-btn">Show My Credit</button>
+            <label class="form">&nbsp;Credit</label> <input type="text" id="balance" readonly>
+            <button class="btn btn-primary" id="withdraw-balance-btn">Withdraw</button>
+
+            <div style="margin: 20px 0 0 0"></div>
+            <h2>For flight Information</h2>
+            <br>
+
+            <label class="form">Number</label>
+
+            <select type="text" id="flight-number-info-get" >
+                <option value="LH123">LH123</option>
+                <option value="UA456">UA456</option>
+                <option value="MV789">MV789</option>
+                <option value="JK012">JK012</option>
+            </select>&nbsp;
+            <label class="form">Airline</label>
+            Name
+            <input readonly type="text"  size=3 id="airline-info" value="AIR1"/>
+            Address
+            <input readonly type="text"  size=5 id="airline-info-address"  value ="0x018C2daBef4904ECbd7118350A0c54DbeaE3549A"/>
+
+            <button class="btn btn-primary" id="submit-oracle">Calculate Flight Status and Possible Credit</button>
+            <br>
+            <br>
+        </div>
         </div>
     </main>
 
