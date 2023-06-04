@@ -90,4 +90,21 @@ the addresses 10th to 29th are for the oracles.
 7) The user can then click on the Show my Credit button and the balance of users account will be displayed.
 
 8) User can then withdraw his/her credit amount by clicking on the button "Withdraw"
- 
+
+## Screenshots
+
+Screenshots are available in the folder `screenshots`
+
+Tests are running successfully:
+
+![Tests are running successfully](screenshots/tests_are_passing.png)
+
+Airline could be funded:
+
+![Airline could be funded](screenshots/first_airline_funded_after_clicking_on_fund.png)
+
+
+User purchased an insurance policy for 1 ETH and oracle response was 20, therefore user was credited by 1,5 ETH. 
+And after that user clicked on the Withdraw button and the operation was successful.
+
+![Use could withdraw credit](screenshots/user_could_withdraw_1_5_ether_because_oracle_status_20.png)
